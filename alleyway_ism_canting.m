@@ -1,6 +1,6 @@
 clear all; close all;
 
-%% setup
+%% 1. setup
 % all measurements in feet, so convert speed of sound to get samples later
 x_s = 1.5;
 y_s = 3;
@@ -8,20 +8,20 @@ h = y_s;
 W = 6;
 H = 24; 
 
-maxorder = 100; % well acutally this is half the maxorder
+maxorder = 1000; % well acutally this is half the maxorder
 orders = [];
 % compute the coordinates of the virtual sources: first x-coordinate
 xcoord = []; ycoord = [];
 theta = pi*0.554/180; % canting angle of the left wall
 % theta = theta/2;
 
-%%  define sources, count order to correctly apply filters
+%% 2. define sources, count order to correctly apply filters
 %!!!---------- x-coordinates look right but not y-coordates ----------!!!%
 k = 1;
 for i = 0:1,
     for j = 0:maxorder,
-        sources_x = (-1).^(i+1)*2*W*floor((i+j)/2)+(-1).^j*x_s*cos(floor((j-i-1)/2)*theta);
-        sources_y = y_s + abs(sources_x*sin(floor(j/2)*theta));
+        sources_x = (-1).^(i+1)*2*W*floor((i+j)/2)+(-1).^j*x_s*cos(floor((j-i+1)/2)*theta);
+        sources_y = y_s + abs(sources_x*sin(floor((j-i+1)/2)*theta));
         xcoord = [xcoord, sources_x];
         ycoord = [ycoord, sources_y];
         orders = [orders, j];
@@ -39,7 +39,7 @@ ycoord = [ycoord, -ycoord];
 % assume perfect reflection off floor
 orders = [orders, orders];
 
-%% now factor in a microphone
+%% 3. now factor in a microphone
 x_l = 3.5;
 y_l = y_s;
 
@@ -57,7 +57,7 @@ end;
 
 dist = dist/3.25; % convert to meters
 
-%% plot virtual sources + mic/source
+%% 4. plot virtual sources + mic/source
 figure();
 plot(xcoord,ycoord,'bo','MarkerSize',5);
 hold all;
@@ -78,14 +78,14 @@ xlabel('Feet'); ylabel('Feet');
 hold off;
 title('Virtual Sources, Original Source, and Microphone in Alleyway');
 
-%% now build the impulse response
+%% 5. setup the impulse response
 fs = 48000;
 m = 20;
 fs_big = m*fs;
 nbins = 4096;
 cv = 343; % meters per second
 
-%% sound absorption coeffs of painted concrete block (dense)
+%% 6. sound absorption coeffs of painted concrete block (dense)
 alpha = sqrt(1-[0.1, 0.05, 0.06, 0.07, 0.09, 0.08]);
 fc = 125*2.^(0:5);
 % [b,a] = bilinear([alpha(end)/1000/2/pi/1.05, alpha(1)],[1/1000/2/pi,1],fs);
@@ -95,7 +95,7 @@ figure(); semilogx(fc,20*log10(alpha), 'o', [0:nbins]/nbins*fs*m/2, 20*log10(abs
 xlim([100 10000]);
 title('Absorption filter for painted dense concrete block');
 
-%% build the impulse response
+%% 7. build the impulse response
 implen = round(max(dist)/cv*fs);
 
 imp = zeros(m*implen,1);
@@ -117,7 +117,7 @@ for nr = 1:length(orders),
     imp = imp + impReflection;
 end;
 
-%% now add "ceiling" reflection
+%% 8. now add "ceiling" reflection
 fc_h = cv/W; % cutoff frequency is related to the width of the alleyway...
 % determine how many vertical reflections will happen in our model given
 % the size
@@ -161,7 +161,7 @@ end;
 
 imp = imp + imp_h;
 
-%% convolve with clap from measurement
+%% 9. convolve with clap from measurement
 [clap,fsclap] = wavread('clap.wav');
 clap = resample(clap, fsclap, fs);
 y = resample(imp, 1, m);
