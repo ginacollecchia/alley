@@ -60,9 +60,9 @@ orchestral whip as sound sources, recorded with INSERT RECORDING EQUIP
 HERE (iPhone, hand-held recorder, interface, capsule mics). One was
 measured with slow logarithmic sine sweeps, recorded using a MOTU
 Traveler Mk3 audio interface, K\&H speaker, and two C-414
-microphones. The locations of the microphones and speaker for the sine
-sweep impulse response collection in an alleyway adjacent to Printer's
-Ink Cafe is shown in Fig.~1.
+microphones. The locations of the microphones and speaker for the
+sine-sweep impulse-response collection in an alleyway adjacent to
+Printer's Ink Cafe is shown in Fig.~1.
 
 \begin{figure}
 \begin{minipage}[b]{0.3\linewidth} \centering
@@ -87,7 +87,7 @@ Ink Cafe is shown in Fig.~1.
 \caption{Photographs from ``Printer's Ink Alleyway" (upper left) and ``Mac's Smoke Shop Alley" (upper right). Plan view (lower left) of our setup in Printer's Ink Alleyway
   with a K\&H speaker and pair of figure-8 C-414 microphones,
   elevation view of the alley (lower right). Measurements were made with the
-  speaker oriented to the North, East, and West in this position.}
+  speaker oriented to the north, east, and west in this position.}
 \end{figure}
 
 The geometries of the spaces are summarized in Table 1 at the top of page
@@ -112,12 +112,28 @@ Mac's Smoke Shop & 2.46 x 24.62 x 7.38m & Left: $0\deg$, Right: $0.3\deg$ & 0.07
 %\normalsize
 
 	
-The impact of the vertical resonant frequencies is better seen in the spectrograms of these impulse responses, but they are so low ($<10$Hz) that their energy is poorly captured by the equipment. % , as they should be around 10Hz for the 8m tall walls...
+The impact of the vertical resonant frequencies is better seen in the
+spectrograms of these impulse responses,\footnote{We use the term
+  ``impulse response'' loosely in this to refer to the response obtain
+  to a balloon pop, clapper, etc.}  but the first are so low ($<10$Hz)
+that their energy is poorly captured by the equipment.
+
+% , as they should be around 10Hz for the 8m tall walls...
 
 
 \section{Modal analysis}
 
-Linear system responses can be thought of as the sum of modal responses. Each of the modal responses represents a resonance with associated damping. We expect the alleyways to have modal responses at integer multiples of half wavelengths of the width of the alleyway (e.g., twice the width). We also expect modes at odd multiples of quarter wavelengths of the distance between the floor and the open ``ceiling," as in an open acoustic tube. These modes are labeled in the spectra in Figs.~2-4, evidencing the strong peaks along the expected harmonic series.
+Linear system responses can be thought of as the sum of modal
+responses. Each of the modal responses represents a resonance with
+associated damping. We expect the alleyways to have modal responses at
+integer multiples of a fundamental frequency corresponding to a
+wavelength that is twice the width of the alleyway.  We also expect
+modes at odd multiples of a fundamental corresponding to a wavelength
+that is four times the distance between the floor and the open
+``ceiling," as in an acoustic tube such as a clarinet bore that is
+open on one end and closed on the other. These modes are labeled in
+the spectra of Figs.~2-4, evidencing the strong peaks along the
+expected harmonic series.
 
 %Modal analysis connects the resonant frequencies seen in the different
 % alleyways with their physical dimensions. Duct modes, etc.
@@ -149,13 +165,19 @@ Linear system responses can be thought of as the sum of modal responses. Each of
 Visually inspecting the impulse response and spectrogram reveal many interesting acoustic features. In addition to the weak spectral zeros between the ``wall" harmonics that rise in frequency with time, a modulated tone ($\approx$370 Hz for the 1.85m-wide alleyway, the fourth harmonic) lasts
 noticeably longer than the harmonic series associated with the distance between the walls.
 
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/P14IR_irsg_cropped.pdf} \caption{Logarithmic time scale spectrogram for a measured impulse response, speaker oriented to the West, microphone channel 1.} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/P14IR_irsg_cropped.pdf} \caption{Logarithmic time scale spectrogram for a measured impulse response, speaker oriented to the west, microphone channel 1.} \end{figure}
 
 \subsection{Onset}
 In the impulse response onset (viewed with high time resolution in Fig.~5), spectral zeros increase with time until about 100ms, when they fall back down. We see a modal pattern consistent with our alleyway dimensions, as well as modulation of many of the modes at different rates. The onset also shows correlation between the modulation of modes and the pattern of spectral zeros.
 
 \subsection{Decay}
-Figure 6 depicts a high frequency resolution spectrogram of the same impulse response as in Fig.~5, showing more information about the decay of acoustic energy in the alley. We see strong scalloping of individual modes, suggesting multiple closely spaced modes. This is verified by the spectra in Figs.~2-4, which feature nearby peaks to the labeled peaks exist in many cases.
+
+Figure 6 depicts a high frequency-resolution spectrogram of the same
+impulse response as in Fig.~5, showing more information about the
+decay of acoustic energy in the alley. We see strong scalloping of
+individual modes, suggesting multiple closely spaced modes. This is
+verified by the spectra in Figs.~2-4, in which additional peaks very
+close to the labeled peaks can be observed in many cases.
 
 %At the onset of the energy, the response rises and then falls back
 %down within the first 100 milliseconds. The tone modulation rate was
@@ -191,14 +213,14 @@ This image source model produces the following impulse response up to 480 orders
 
 In this response, we see the same diagonals of spectral zeros as in the onset in Fig.~5. These are explained by the relationship between pairs of virtual sources located at $(x,y)$ and $(x,-y)$, and their distance to the microphone: as order increases, this distance approaches 0. Considering the
 microphone antennae pattern, speaker radiation pattern (facing the
-West wall), and speed of sound in air, we can relate visible peaks in
+west wall), and speed of sound in air, we can relate visible peaks in
 the impulse response to virtual sources in our model as in Fig.~9.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/annotated_reflections_v2.pdf} 
 \caption{Impulse response for the setup shown in Fig.~1 with speaker
-  oriented to the West, first microphone channel oriented West-East, and second microphone channel oriented North-South, annotated with the virtual sources from our
-  model. Because the microphones are figure-8, arrivals from the West wall (wall 1) are positive
-and the East wall (wall 2) are negative. Gray, vertical lines mark the expected time of arrival of
+  oriented to the west, first microphone channel oriented west-east, and second microphone channel oriented north-south, annotated with the virtual sources from our
+  model. Because the microphones are figure-8, arrivals from the west wall (wall 1) are positive
+and the east wall (wall 2) are negative. Gray, vertical lines mark the expected time of arrival of
   reflections coming from virtual sources, and the yellow circles
   label the virtual source index.} %After about 20ms, the sources
 %  originating from behind the speaker (e.g., reflecting off of Wall 2)
@@ -231,7 +253,7 @@ as the angle between the microphone and the pair of sources approaches 0. Theref
 %\caption{Plan view (left) of our setup in ``Printer's Ink Alleyway"
 %   with speaker and pair of figure-8 microphones, and elevation view of
 %   the alley (right). Measurements were made with speaker oriented to
-%   the North, East, and West.}
+%   the north, east, and west.}
 %\end{figure}
 
 

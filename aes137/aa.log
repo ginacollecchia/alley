@@ -1,20 +1,19 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  21 JUL 2014 01:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/MacPorts 2014_1) (preloaded format=pdflatex 2014.7.6)  21 JUL 2014 03:09
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**aa.tex
+**aa
 (./aa.tex
 LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+Babel <3.9k> and hyphenation patterns for 43 languages loaded.
 (./aes137.cls
 Document Class: aes137 2004/06/14 v1.01 AES 137th convention paper style
 (./aes.cls
 Document Class: aes 2012/08/11 v0.65 AES convention paper style
 ...this is a Convention...
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/report.cls
+(/opt/local/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+(/opt/local/share/texmf-texlive/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,31 +29,31 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/opt/local/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -100,7 +99,7 @@ LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(/opt/local/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count93
 \scratchdimen=\dimen107
@@ -113,15 +112,15 @@ LaTeX Font Info:    ... okay on input line 36.
 \MPnumerator=\count97
 \makeMPintoPDFobject=\count98
 \everyMPtoPDFconversion=\toks17
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -130,22 +129,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -156,7 +155,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -170,17 +169,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 38.
- [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./aeslogo.pdf>]
-<images/pic_P14.jpg, id=41, 361.35pt x 641.39626pt>
+<images/pic_P14.jpg, id=40, 361.35pt x 641.39626pt>
 File: images/pic_P14.jpg Graphic file (type jpg)
  <use images/pic_P14.jpg>
 Package pdftex.def Info: images/pic_P14.jpg used on input line 69.
 (pdftex.def)             Requested size: 67.7538pt x 102.12291pt.
 
-<images/pic_M13.jpg, id=43, 2055.68pt x 1368.11125pt>
+<images/pic_M13.jpg, id=42, 2055.68pt x 1368.11125pt>
 File: images/pic_M13.jpg Graphic file (type jpg)
  <use images/pic_M13.jpg>
 Package pdftex.def Info: images/pic_M13.jpg used on input line 73.
@@ -190,58 +189,60 @@ Overfull \hbox (2.18375pt too wide) in paragraph at lines 68--75
 [][]   [] 
  []
 
-<images/alleyway_birdseye.png, id=44, 566.115pt x 873.2625pt>
+<images/alleyway_birdseye.png, id=43, 566.115pt x 873.2625pt>
 File: images/alleyway_birdseye.png Graphic file (type png)
 
 <use images/alleyway_birdseye.png>
 Package pdftex.def Info: images/alleyway_birdseye.png used on input line 80.
 (pdftex.def)             Requested size: 103.88963pt x 160.2452pt.
 
-<images/alleyway_lookingdown.png, id=45, 561.09625pt x 957.5775pt>
+<images/alleyway_lookingdown.png, id=44, 561.09625pt x 957.5775pt>
 File: images/alleyway_lookingdown.png Graphic file (type png)
 
 <use images/alleyway_lookingdown.png>
 Package pdftex.def Info: images/alleyway_lookingdown.png used on input line 84.
 
 (pdftex.def)             Requested size: 92.59676pt x 158.02269pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 118.
 
-Underfull \hbox (badness 1199) in paragraph at lines 120--121
+Underfull \hbox (badness 1199) in paragraph at lines 126--137
 \OT1/cmr/m/n/10 sum of modal re-sponses. Each of the modal
  []
 
-<images/printers_labeled_IR.png, id=46, 571.13374pt x 427.5975pt>
+<images/printers_labeled_IR.png, id=45, 571.13374pt x 427.5975pt>
 File: images/printers_labeled_IR.png Graphic file (type png)
 
 <use images/printers_labeled_IR.png>
-Package pdftex.def Info: images/printers_labeled_IR.png used on input line 127.
+Package pdftex.def Info: images/printers_labeled_IR.png used on input line 143.
 
 (pdftex.def)             Requested size: 225.84375pt x 169.08511pt.
 
-<images/artists_labeled_IR.png, id=47, 571.13374pt x 426.59375pt>
+<images/artists_labeled_IR.png, id=46, 571.13374pt x 426.59375pt>
 File: images/artists_labeled_IR.png Graphic file (type png)
 
 <use images/artists_labeled_IR.png>
-Package pdftex.def Info: images/artists_labeled_IR.png used on input line 134.
+Package pdftex.def Info: images/artists_labeled_IR.png used on input line 150.
 (pdftex.def)             Requested size: 225.84375pt x 168.68819pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/macs_labeled_IR.png, id=48, 570.13pt x 426.59375pt>
+<images/macs_labeled_IR.png, id=47, 570.13pt x 426.59375pt>
 File: images/macs_labeled_IR.png Graphic file (type png)
 
 <use images/macs_labeled_IR.png>
-Package pdftex.def Info: images/macs_labeled_IR.png used on input line 140.
+Package pdftex.def Info: images/macs_labeled_IR.png used on input line 156.
 (pdftex.def)             Requested size: 225.84375pt x 168.98111pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/P14IR_irsg_cropped.pdf, id=49, 525.66383pt x 387.40575pt>
+<images/P14IR_irsg_cropped.pdf, id=48, 525.66383pt x 387.40575pt>
 File: images/P14IR_irsg_cropped.pdf Graphic file (type pdf)
 
 <use images/P14IR_irsg_cropped.pdf>
-Package pdftex.def Info: images/P14IR_irsg_cropped.pdf used on input line 152.
+Package pdftex.def Info: images/P14IR_irsg_cropped.pdf used on input line 168.
 (pdftex.def)             Requested size: 225.84375pt x 166.43935pt.
 
 
@@ -253,7 +254,7 @@ opy)>] <images/P14IR_sgm_cropped.pdf, id=57, 542.8669pt x 394.86964pt>
 File: images/P14IR_sgm_cropped.pdf Graphic file (type pdf)
 
 <use images/P14IR_sgm_cropped.pdf>
-Package pdftex.def Info: images/P14IR_sgm_cropped.pdf used on input line 169.
+Package pdftex.def Info: images/P14IR_sgm_cropped.pdf used on input line 191.
 (pdftex.def)             Requested size: 225.84375pt x 164.27153pt.
 
 
@@ -268,23 +269,29 @@ PNG copy)> <./images/P14IR_irsg_cropped.pdf>]
 File: images/ISM_uncanted.pdf Graphic file (type pdf)
 
 <use images/ISM_uncanted.pdf>
-Package pdftex.def Info: images/ISM_uncanted.pdf used on input line 184.
+Package pdftex.def Info: images/ISM_uncanted.pdf used on input line 206.
 (pdftex.def)             Requested size: 225.84375pt x 110.13899pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <images/IM_480c00_irsg_cropped.pdf, id=84, 532.9874pt x 389.56592pt>
 File: images/IM_480c00_irsg_cropped.pdf Graphic file (type pdf)
 
 <use images/IM_480c00_irsg_cropped.pdf>
-Package pdftex.def Info: images/IM_480c00_irsg_cropped.pdf used on input line 1
-90.
+Package pdftex.def Info: images/IM_480c00_irsg_cropped.pdf used on input line 2
+12.
 (pdftex.def)             Requested size: 225.84375pt x 165.06697pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <images/annotated_reflections_v2.pdf, id=85, 2296.58pt x 1814.78pt>
 File: images/annotated_reflections_v2.pdf Graphic file (type pdf)
 
 <use images/annotated_reflections_v2.pdf>
 Package pdftex.def Info: images/annotated_reflections_v2.pdf used on input line
- 197.
+ 219.
 (pdftex.def)             Requested size: 225.84375pt x 178.44258pt.
 
 
@@ -294,7 +301,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/planview_paths_v2.pdf Graphic file (type pdf)
 
 <use images/planview_paths_v2.pdf>
-Package pdftex.def Info: images/planview_paths_v2.pdf used on input line 210.
+Package pdftex.def Info: images/planview_paths_v2.pdf used on input line 232.
 (pdftex.def)             Requested size: 158.08994pt x 141.5159pt.
 
 
@@ -302,11 +309,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 <./images/P14IR_sgm_cropped.pdf> <./images/ISM_uncanted.pdf> <./images/IM_48
 0c00_irsg_cropped.pdf>]
+Underfull \vbox (badness 2762) has occurred while \output is active []
+
+
 <images/ISM_0m_cant_0m_dip.png, id=135, 676.5275pt x 417.56pt>
 File: images/ISM_0m_cant_0m_dip.png Graphic file (type png)
 
 <use images/ISM_0m_cant_0m_dip.png>
-Package pdftex.def Info: images/ISM_0m_cant_0m_dip.png used on input line 245.
+Package pdftex.def Info: images/ISM_0m_cant_0m_dip.png used on input line 267.
 (pdftex.def)             Requested size: 225.84375pt x 149.05879pt.
 
 <images/ISM_0pt05m_cant_0m_dip.png, id=137, 676.5275pt x 417.56pt>
@@ -314,69 +324,69 @@ File: images/ISM_0pt05m_cant_0m_dip.png Graphic file (type png)
 
 <use images/ISM_0pt05m_cant_0m_dip.png>
 Package pdftex.def Info: images/ISM_0pt05m_cant_0m_dip.png used on input line 2
-49.
+71.
 (pdftex.def)             Requested size: 225.84375pt x 149.05879pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <images/ISM_0pt05m_cant_0pt02m_dip.png, id=139, 676.5275pt x 417.56pt>
 File: images/ISM_0pt05m_cant_0pt02m_dip.png Graphic file (type png)
 
 <use images/ISM_0pt05m_cant_0pt02m_dip.png>
 Package pdftex.def Info: images/ISM_0pt05m_cant_0pt02m_dip.png used on input li
-ne 253.
+ne 275.
 (pdftex.def)             Requested size: 225.84375pt x 149.05879pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./images/ISM_0m_cant_0m_dip.png (PNG copy)> <./images/ISM_0pt05m_cant_0m_di
-p.png (PNG copy)> <./images/annotated_reflections_v2.pdf> <./images/planview_pa
-ths_v2.pdf>] <images/P12C_irsg_cropped.pdf, id=151, 530.57169pt x 385.30669pt>
+[5 <./images/ISM_0m_cant_0m_dip.png (PNG copy)> <./images/annotated_reflections
+_v2.pdf> <./images/planview_paths_v2.pdf>]
+<images/P12C_irsg_cropped.pdf, id=150, 530.57169pt x 385.30669pt>
 File: images/P12C_irsg_cropped.pdf Graphic file (type pdf)
 
 <use images/P12C_irsg_cropped.pdf>
-Package pdftex.def Info: images/P12C_irsg_cropped.pdf used on input line 300.
+Package pdftex.def Info: images/P12C_irsg_cropped.pdf used on input line 322.
 (pdftex.def)             Requested size: 225.84375pt x 164.00891pt.
 
-Underfull \hbox (badness 1102) in paragraph at lines 300--300
+Underfull \hbox (badness 1102) in paragraph at lines 322--322
 []\OT1/cmr/bx/n/10 Fig. 14: \OT1/cmr/m/n/10 Spec-tro-grams of four hand claps i
 n
  []
 
+[6 <./images/ISM_0pt05m_cant_0m_dip.png (PNG copy)> <./images/ISM_0pt05m_cant_0
+pt02m_dip.png (PNG copy)> <./images/P12C_irsg_cropped.pdf>] (./aa.bbl) [7
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./images/ISM_0pt05m_cant_0pt02m_dip.png (PNG copy)> <./images/P12C_irsg_cro
-pped.pdf>] (./aa.bbl) [7
-
-] (./aa.aux) ) 
+]
+(./aa.aux) ) 
 Here is how much of TeX's memory you used:
- 1824 strings out of 493117
- 27077 string characters out of 6135433
- 91698 words of memory out of 5000000
- 5258 multiletter control sequences out of 15000+600000
- 9793 words of font info for 35 fonts, out of 8000000 for 9000
- 1142 hyphenation exceptions out of 8191
- 39i,9n,25p,635b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on aa.pdf (7 pages, 1988929 bytes).
+ 1831 strings out of 494213
+ 26974 string characters out of 6157494
+ 90153 words of memory out of 5000000
+ 5093 multiletter control sequences out of 15000+600000
+ 10705 words of font info for 38 fonts, out of 8000000 for 9000
+ 431 hyphenation exceptions out of 8191
+ 39i,9n,25p,631b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></op
+t/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></opt/local
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/local/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmss10.pfb></opt/local/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmss17.pfb></opt/local/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmss8.pfb></opt/local/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmssbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti
+7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on aa.pdf (7 pages, 2018059 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
