@@ -64,6 +64,17 @@ microphones. The locations of the microphones and speaker for the sine
 sweep impulse response collection in an alleyway adjacent to Printer's
 Ink Cafe is shown in Fig.~1.
 
+\begin{figure}
+\begin{minipage}[b]{0.3\linewidth} \centering
+\includegraphics[width=\textwidth, trim=0mm 16mm 0mm 18mm, clip]{images/pic_P14.jpg}
+\end{minipage}
+\hspace{0.01\linewidth}
+\begin{minipage}[b]{0.68\linewidth} \centering
+\includegraphics[width=\textwidth]{images/pic_M13.jpg}
+\end{minipage}
+\end{figure}
+
+
 \begin{figure} 
 \begin{minipage}[b]{0.46\linewidth} \centering
 \includegraphics[width=\textwidth]{images/alleyway_birdseye.png}
@@ -73,53 +84,57 @@ Ink Cafe is shown in Fig.~1.
 \includegraphics[width=\textwidth]{images/alleyway_lookingdown.png}
 \end{minipage}
 
-\caption{Plan view (left) of our setup in ``Printer's Ink Alleyway"
-  with a K\&H speaker and pair of figure-8 C-414 microphones; and
-  elevation view of the alley (right). Measurements were made with
+\caption{Photographs from ``Printer's Ink Alleyway" (upper left) and ``Mac's Smoke Shop Alley" (upper right). Plan view (lower left) of our setup in Printer's Ink Alleyway
+  with a K\&H speaker and pair of figure-8 C-414 microphones,
+  elevation view of the alley (lower right). Measurements were made with the
   speaker oriented to the North, East, and West in this position.}
 \end{figure}
 
-Measurements were made using a number of source and microphone
-positions, including positions between and at the walls and at various
-heights ranging from on the ground to eye level. The geometries of the
-spaces are summarized in Table 1 at the top of page
-\pageref{table:geometries}. All measurement spectra show peaks at the
-harmonic series associated with the distance between the parallel
-walls, as shown in Figs.~2--4.
+The geometries of the spaces are summarized in Table 1 at the top of page
+\pageref{table:geometries}. 
 
 \begin{table*}
 \begin{center} 
-%\footnotesize
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Adjacent Store} & \textbf{WxLxH} & \textbf{Wall cant} & \textbf{Floor dip} \\
 \hline
-Printer's Ink & 1.85 x 19.69 x 7.38m & Yes (left): $\approx0.52\deg$ & 0m \\
+Printer's Ink & 1.85 x 19.69 x 7.38m & Left: $-0.6\deg$, Right: $0.3\deg$ & 0m \\
 \hline
-Accent Art & 2.46 x 24.62 x 6.77m & $0.2\deg$ & 0m \\
+Accent Art & 2.46 x 24.62 x 6.77m & Left: $-0.2\deg$, Right: $-0.8\deg$ & 0m \\
 \hline
-Mac's Smoke Shop & 2.46 x 24.62 x 7.38m & Yes (right): $\approx0.30\deg$ & 0.077m \\
+Mac's Smoke Shop & 2.46 x 24.62 x 7.38m & Left: $0\deg$, Right: $0.3\deg$ & 0.077m \\
 \hline
-\end{tabular} 
-\caption{Dimensions of the three measured alleyways, named for the business adjacent to them.} 
+\end{tabular} \caption{Dimensions of the three measured alleyways, named for the business adjacent to them.}
 \end{center}
 \label{table:geometries}
 \end{table*}
 %\normalsize
 
+	
+The impact of the vertical resonant frequencies is better seen in the spectrograms of these impulse responses, but they are so low ($<10$Hz) that their energy is poorly captured by the equipment. % , as they should be around 10Hz for the 8m tall walls...
+
+
+\section{Modal analysis}
+
+Linear system responses can be thought of as the sum of modal responses. Each of the modal responses represents a resonance with associated damping. We expect the alleyways to have modal responses at integer multiples of half wavelengths of the width of the alleyway (e.g., twice the width). We also expect modes at odd multiples of quarter wavelengths of the distance between the floor and the open ``ceiling," as in an open acoustic tube. These modes are labeled in the spectra in Figs.~2-4, evidencing the strong peaks along the expected harmonic series.
+
+%Modal analysis connects the resonant frequencies seen in the different
+% alleyways with their physical dimensions. Duct modes, etc.
+
 % FFT plots
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/printers_labeled_IR.png} 
 \caption{Magnitude spectrum of the Printer's Ink Alley from
-  a balloon pop recorded with INSERT HANDHELD RECORDER. The labeled
-  peaks have a difference of either 90 or 180Hz, related to its width
-  (1.85m $\simeq$ 185Hz).}
+  a balloon pop recorded with two BLANK omni microphones. The labeled
+  peaks have a difference of either 90 or 180Hz, related to twice the alleyway width
+  ($2*1.85$m $\longleftrightarrow$ 92Hz).}
 \end{figure}
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/artists_labeled_IR.png} 
 \caption{Magnitude spectrum of the Artist Accent Alley from hand claps
   recorded with an iPhone 5S. These differ in either 66 or 132Hz,
-  related to its width (2.46m $\simeq$ 139Hz).}
+  related to twice its width ($2*2.46$m $\longleftrightarrow$ 139Hz).}
 \end{figure}
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/macs_labeled_IR.png} 
@@ -128,43 +143,30 @@ Mac's Smoke Shop & 2.46 x 24.62 x 7.38m & Yes (right): $\approx0.30\deg$ & 0.077
   either 68 or 135Hz, again related to its width (2.46m).}
 \end{figure}
 
-The impact of the vertical resonant frequencies is better seen in the
-spectrograms of these pulse responses.
-% , as they should be around 10Hz for the 8m tall walls...
 
-\section{Modal analysis}
-
-Modal analysis connects the resonant frequencies seen in the different
-alleyways with their physical dimensions. Duct modes, etc.
 
 \section{Transient response}
+Visually inspecting the impulse response and spectrogram reveal many interesting acoustic features. In addition to the weak spectral zeros between the ``wall" harmonics that rise in frequency with time, a modulated tone ($\approx$370 Hz for the 1.85m-wide alleyway, the fourth harmonic) lasts
+noticeably longer than the harmonic series associated with the distance between the walls.
 
-All measurement spectrograms (Figs.~5 and 6) showed weak spectral
-zeros between the ``wall" harmonics ($\approx$185 Hz and multiples for
-a 1.85m-wide alleyway) that rise in frequency with time, and a
-modulated tone ($\approx$370 Hz for the 1.85m-wide alleyway) lasting
-noticeably longer than the harmonic series associated with the
-distance between the walls.
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/P14IR_irsg_cropped.pdf} \caption{Logarithmic time scale spectrogram for a measured impulse response, speaker oriented to the West, microphone channel 1.} \end{figure}
 
-\begin{figure}[h] \centering \includegraphics[width=\linewidth, trim=10mm 5mm 2mm 7mm, clip]{images/logspectrogram.png} 
-\caption{Logarithmic time scale spectrogram for a measured impulse
-  response, speaker oriented to the West, microphone channel 1.}
-\end{figure}
+\subsection{Onset}
+In the impulse response onset (viewed with high time resolution in Fig.~5), spectral zeros increase with time until about 100ms, when they fall back down. We see a modal pattern consistent with our alleyway dimensions, as well as modulation of many of the modes at different rates. The onset also shows correlation between the modulation of modes and the pattern of spectral zeros.
 
-At the onset of the energy, the response rises and then falls back
-down within the first 100 milliseconds. The tone modulation rate was
-roughly 1.2 Hz, indicating the presence of two modes, very close in
-frequency. The harmonic series lasted a few hundred milliseconds,
-whereas the tone lasted several seconds. Fig.~6, with a linear time
-scale, shows more detail of these modulating modes.
+\subsection{Decay}
+Figure 6 depicts a high frequency resolution spectrogram of the same impulse response as in Fig.~5, showing more information about the decay of acoustic energy in the alley. We see strong scalloping of individual modes, suggesting multiple closely spaced modes. This is verified by the spectra in Figs.~2-4, which feature nearby peaks to the labeled peaks exist in many cases.
 
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth, trim=10mm 5mm 2mm 3mm, clip]{images/logspectrogram_evenmoredetail.png} 
-\caption{Spectrogram with linear time scale of a balloon pop of the
-  same impulse response as Fig.~2, showing more detail of the low
-  frequencies and their strong, independent modulation.}
-\end{figure}
+%At the onset of the energy, the response rises and then falls back
+%down within the first 100 milliseconds. The tone modulation rate was
+%roughly 1.2 Hz, indicating the presence of two modes, very close in
+%frequency. The harmonic series lasted a few hundred milliseconds,
+%whereas the tone lasted several seconds. 
+%
+%Fig.~6, with a linear time
+%scale, shows more detail of these modulating modes.
 
-Energy decay envelope, etc.
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/P14IR_sgm_cropped.pdf} \caption{Spectrogram with linear time scale of a balloon pop of the same impulse response as Fig.~2, showing more detail of the low frequencies and their strong, independent modulation.} \end{figure}
 
 \section{Image model}
 
@@ -180,34 +182,42 @@ source rows above and below the ground, spaced about even multiples of
 the alleyway height.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/ISM_uncanted.pdf} 
-\caption{The image source model for an alley with perfectly orthogonal walls.} 
+\caption{The image source model for an alley with perfectly orthogonal walls, describing the behavior of frequencies with wavelengths shorter than twice the width of the alley.} 
 \end{figure}
 
-This simple model describes pretty closely what we see in the first 75
-milliseconds of the impulse response, proven by annotating a measured
-impulse response with the expected arrival of reflections from the
-virtual sources in Fig.~8. Measurements taken with figure 8
-microphones orthogonal to one another show arrivals from the West wall
-as positive spikes and arrivals from the East as negative ones. The
-very first early reflections hit the microphones near their pole, as
-well as the direct path, so these events are more evident in the
-second channel, pointed down the length of the alley. Considering the
+This image source model produces the following impulse response up to 480 orders of reflection, with the source and microphone in the same positions as in Fig.~1 and the alleyway dimensions of Printer's Ink Alley. The frequency response of painted concrete block was assumed flat, but a small amount of attenuation was applied to account for this.
+
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/IM_480c00_irsg_cropped.pdf} \caption{Synthesized impulse response and spectrogram of the simple image model for 480 orders of reflection.} \end{figure}
+
+In this response, we see the same diagonals of spectral zeros as in the onset in Fig.~5. These are explained by the relationship between pairs of virtual sources located at $(x,y)$ and $(x,-y)$, and their distance to the microphone: as order increases, this distance approaches 0. Considering the
 microphone antennae pattern, speaker radiation pattern (facing the
 West wall), and speed of sound in air, we can relate visible peaks in
-the impulse response to virtual sources in our model.
+the impulse response to virtual sources in our model as in Fig.~9.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/annotated_reflections_v2.pdf} 
 \caption{Impulse response for the setup shown in Fig.~1 with speaker
-  oriented to the West, annotated with the virtual sources from our
-  model. Gray vertical lines mark the expected time of arrival of
+  oriented to the West, first microphone channel oriented West-East, and second microphone channel oriented North-South, annotated with the virtual sources from our
+  model. Because the microphones are figure-8, arrivals from the West wall (wall 1) are positive
+and the East wall (wall 2) are negative. Gray, vertical lines mark the expected time of arrival of
   reflections coming from virtual sources, and the yellow circles
-  label the virtual source index. After about 20ms, the sources
-  originating from behind the speaker (e.g., reflecting off of Wall 2)
-  are less evident. The direct path, first reflection off of Wall 2,
-  and earliest reflections off of the floor are also small in Mic 1,
-  as these arrived in the null of the figure-8 pattern which was
-  oriented towards the parallel walls.}
+  label the virtual source index.} %After about 20ms, the sources
+%  originating from behind the speaker (e.g., reflecting off of Wall 2)
+%  are less evident, and are not labeled. The direct path, first reflection off of Wall 2,
+%  and earliest reflections off of the floor are also small in Mic 1,
+%  as these arrived in the null of the antennae pattern.}
 \end{figure}
+
+\begin{figure}[h!] \centering \includegraphics[width=0.7\linewidth]{images/planview_paths_v2.pdf} 
+\caption{The first three orders of reflections as viewed from above the alley.} 
+\end{figure}
+
+After the `201' source in Fig.~9, no more sources beginning with
+`2' (to mean that they originated from the back of the speaker) are
+labeled, as they get lost in the noise floor. The very first early reflections hit Mic 1 near its pole, as
+well as the direct path, so these events are more evident in the second channel. Soon after these, a clear pattern emerges between the polarity of pulses
+and the source location: sources with virtual location $(x,y)$ and
+$(x,-y)$ are seen in pairs in the impulse response, getting closer to one another over time
+as the angle between the microphone and the pair of sources approaches 0. Therefore, this simple model closely describes what we see in the onset of the impulse response. 
 
 %\begin{figure} 
 %\begin{minipage}[b]{0.45\linewidth} \centering
@@ -224,33 +234,20 @@ the impulse response to virtual sources in our model.
 %   the North, East, and West.}
 %\end{figure}
 
-\begin{figure}[h!] \centering \includegraphics[width=0.7\linewidth]{images/planview_paths_v2.pdf} 
-\caption{The first three orders of reflections as viewed from above the alley.} 
-\end{figure}
 
-As you can see, after the `201' source, no more sources beginning with
-`2' (implying that they originated from the back of the speaker) are
-labeled, as they get lost in the noise. After the first handful of
-reflections, a clear pattern emerges between the polarity of pulses
-and the source location: sources with virtual location (x,y) and
-(x,-y) come in pairs in the impulse response. They all originate from
-the front of the speaker, and they get closer to one another over time
-as the angle between the microphone and the pair of sources approaches
-0.
-
-But this model does not explain the strong amplitude modulation we
-experience in the response. To resolve this, we returned to the
+Left to explain, then, is the mode splitting we
+experience, and the long duration of the transient response. To resolve this, we returned to the
 alleyways and measured just how flat and orthogonal the walls actually
 were. We discovered small (but significant, given the height of the
 walls) angles of canting in half of the walls, as well as a dip
-centered on the ground in Mac's Smoke Shop Alley of about 80mm.
+centered on the ground in Mac's Smoke Shop Alley given in Table 1. The resultant model, first with a 0.05m amount of canting in both walls, then with the same canting and a 0.02m dip in the center of the floor, is plotted in Figures 12-13, with the simple image model plotted in Figure 11 for comparison.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth, trim=13mm 2mm 10mm 3mm, clip]{images/ISM_0m_cant_0m_dip.png} 
-\caption{Virtual source locations for an alleyway with no canting. Note that invisible sources appear in the same locations as visible ones: for example, $vs_{02}$ and $vs_{20}$ are in the same location, but because the microphone is above the source, it ``sees" $vs_{20}$ and not the other. This illustrates the degeneracy of sources in the image method.} 
+\caption{Virtual source locations for an alleyway with no canting. Note that invisible sources appear in the same locations as visible ones: for example, `02' and `20' are in the same location, but because the microphone is above the source, it ``sees" `20' and not the other. This illustrates the \textit{degeneracy} of sources in the simple model, which will not occur in models with canting.} 
 \end{figure}
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth, trim=13mm 2mm 10mm 3mm, clip]{images/ISM_0pt05m_cant_0m_dip.png} 
-\caption{Virtual source locations for an alleyway with both walls canted in 0.05m.} 
+\caption{Virtual source locations for an alleyway with both walls canted in 0.05m. The more complex geometry heeds more sources with distinct positions.} 
 \end{figure}
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth, trim=13mm 2mm 10mm 3mm, clip]{images/ISM_0pt05m_cant_0pt02m_dip.png} 
@@ -259,39 +256,55 @@ centered on the ground in Mac's Smoke Shop Alley of about 80mm.
 
 These more complex constraints lead to a model with sources lying on a
 circle centered where the two walls would meet in space were they
-extended sufficiently long, then another circle of sources reflected
-about the floor, and finally, dense arcs of sources that intersect
+extended sufficiently long (the upper blue arc of sources). These are then reflected through the floor to generate another circle of sources (the lowest red arc), and finally, dense arcs of sources that intersect
 both of these circles at 90 degree angles.
 
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/ISM_canted_v2.pdf} 
-\caption{The image sources lie on a circle centered at the point of the wall intersection, if they were extended infinitely through space.} 
-\end{figure}
+As the reflection order increases, the distance from the listener to the virtual sources increases roughly linearly, as well as the number of distinct virtual sources that contribute to the response. Because those distinct sources arrive at distinct times (where we once had images with identical locations), the energy does not decay at the expected $1/r$ rate of spherical spreading, but instead more like a $1/\sqrt{r}$ amplitude decay. %This spread in the positions of the 
+These ``ripples" of concentric arcs of virtual sources generate the observed mode-splitting, which takes on the form of the strong amplitude modulation due to the beating frequencies.
 
-These ``ripples" of concentric arcs generate the amplitude modulation
-that we experience. The degree to which energy is reflected back into
-the alleyway at its upper boundary is frequency dependent, and this
-makes for frequency dependent modulation of a given mode.
 
-Reflection filters for the walls consisting of painted concrete block
-are virtually flat, but were accounted for according to the following
-table.
+%\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/ISM_canted_v2.pdf} 
+%\caption{The image sources lie on a circle centered at the point of the wall intersection, if they were extended infinitely through space.} 
+%\end{figure}
 
-\begin{table}
-\begin{center} \small
-\begin{tabular}{|l|c|c|c|c|c|c|}
-\hline
-$f$ (Hz) & 125 & 250 & 500 & 1000 & 2000 & 4000 \\
-\hline
-Gain & 0.9 & 0.95 & 0.94 & 0.93 & 0.91 & 0.92 \\
-\hline
-\end{tabular}
 
-\caption{Absorption coefficients for painted concrete.} 
-\end{center} \normalsize
-\end{table}
 
-\subsection{Synthesis}
+%These ``ripples" of concentric arcs generate the amplitude modulation
+%that we experience. The degree to which energy is reflected back into
+%the alleyway at its upper boundary is frequency dependent, and this
+%makes for frequency dependent modulation of a given mode.
 
+%Reflection filters for the walls consisting of painted concrete block
+%are virtually flat, but were accounted for according to the following
+%table.
+%
+%\begin{table}
+%\begin{center} \small
+%\begin{tabular}{|l|c|c|c|c|c|c|}
+%\hline
+%$f$ (Hz) & 125 & 250 & 500 & 1000 & 2000 & 4000 \\
+%\hline
+%Gain & 0.9 & 0.95 & 0.94 & 0.93 & 0.91 & 0.92 \\
+%\hline
+%\end{tabular}
+
+%\caption{Absorption coefficients for painted concrete block.} 
+%\end{center} \normalsize
+%\end{table}
+
+
+
+\subsection{Source-Microphone Distance}
+From measurements taken with increasing source-microphone distance, we have one more observation about the acoustic behavior of alleyways. With increase in distance, a decreasing chirp frequency at the alleyway response onset becomes more obvious, as illustrated in Fig.~14.
+
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/P12C_irsg_cropped.pdf} \caption{Spectrograms of four hand claps in Printer's Ink Alley, source moving away each pulse, so the source-microphone distance varies from 4' to 12' to 32' to 44' (microphone near center of alley).} \end{figure}
+
+If the source is proximal to the listener in the alley ($<3$m), the response is more closely represented by a constant loop of arriving source reflections---e.g., the simplified image source model in Fig.~7. These arrivals produce the tone and its harmonic series that we expect, with linearly increasing distance between the listener and image sources. But when the source and listener are more distant, the low-order image sources are roughly the same distance to the listener as the original source and the later arrivals become more separated in time, creating the downward chirp frequency response.
+
+%Measurements were made using a number of source-microphone
+%distances. % , including positions between and at the walls and at various heights ranging from on the ground to eye level. 
+
+%The impulse response resulting from the image source model with no canting in the walls is shown in Fig.~13. 
 
 \section{Evaluation and Conclusion}
 
@@ -301,6 +314,9 @@ and the spectral zeros rising in frequency over time are clearly
 visible, and appear to be due to the changing listener arrival times
 of signals from the image source row above the ground, relative to the
 arrival times from the image source row below the ground.
+
+
+% Where the image model fails is in the behavior of the spectral zeros
 
 The long lasting modulated tone is not present in the simple image
 source model. While the open alleyway top would create an inverting
