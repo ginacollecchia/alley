@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  21 JUL 2014 04:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  21 JUL 2014 05:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**aa.tex
-(./aa.tex
+**"On the Acoustics of Alleyways #201.tex"
+(./On the Acoustics of Alleyways #201.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./aes137.cls
@@ -84,8 +84,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 34.
- (./aa.aux)
-\openout1 = `aa.aux'.
+
+No file "On the Acoustics of Alleyways #201".aux.
+\openout1 = `"On the Acoustics of Alleyways #201.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -99,7 +100,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
-
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count93
@@ -170,8 +170,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 38.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
 
+
+LaTeX Warning: Citation `Allen' on page 1 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Borish' on page 1 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Morse' on page 1 undefined on input line 51.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -259,6 +268,10 @@ Package pdftex.def Info: images/P14IR_irsg_cropped.pdf used on input line 162.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `aesxx:lastpage' on page 2 undefined on input line 166
+.
+
 [2 <./images/pic_P14.jpg> <./images/pic_M13.jpg> <./images/alleyway_birdseye.pn
 g> <./images/alleyway_lookingdown.png>]
 <images/P14IR_sgm_cropped.pdf, id=57, 542.8669pt x 394.86964pt>
@@ -292,6 +305,10 @@ Package pdftex.def Info: images/IM_480c00_irsg_cropped.pdf used on input line 2
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `aesxx:lastpage' on page 3 undefined on input line 211
+.
+
 [3 <./images/printers_labeled_IR.png (PNG copy)> <./images/artists_labeled_IR.p
 ng (PNG copy)>]
 <images/annotated_reflections_v2.pdf, id=65, 2296.58pt x 1814.78pt>
@@ -314,6 +331,10 @@ Package pdftex.def Info: images/planview_paths_v2.pdf used on input line 225.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `aesxx:lastpage' on page 4 undefined on input line 230
+.
 
 [4 <./images/macs_labeled_IR.png (PNG copy)> <./images/P14IR_irsg_cropped.pdf> 
 <./images/P14IR_sgm_cropped.pdf> <./images/ISM_uncanted_v2.pdf>]
@@ -349,6 +370,10 @@ ne 257.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `aesxx:lastpage' on page 5 undefined on input line 268
+.
+
 [5 <./images/IM_480c00_irsg_cropped.pdf> <./images/annotated_reflections_v2.pdf
 > <./images/planview_paths_v2.pdf>]
 <images/P12C_irsg_cropped.pdf, id=151, 530.57169pt x 385.30669pt>
@@ -363,6 +388,10 @@ Underfull \hbox (badness 1102) in paragraph at lines 302--302
 n
  []
 
+
+LaTeX Warning: Reference `aesxx:lastpage' on page 6 undefined on input line 305
+.
+
 [6 <./images/ISM_0m_cant_0m_dip.png (PNG copy)> <./images/ISM_0pt05m_cant_0m_di
 p.png (PNG copy)> <./images/ISM_0pt05m_cant_0pt02m_dip.png (PNG copy)> <./image
 s/P12C_irsg_cropped.pdf>]
@@ -373,7 +402,6 @@ File: images/IM_480c00_sgm_cropped.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/IM_480c00_sgm_cropped.pdf used on input line 30
 6.
 (pdftex.def)             Requested size: 225.84375pt x 166.01596pt.
-Missing character: There is no   in font cmr10!
 
 Underfull \hbox (badness 1946) in paragraph at lines 348--350
 \OT1/cmr/m/n/10 The au-thors would like to thank David Kerr
@@ -404,19 +432,28 @@ Underfull \hbox (badness 1147) in paragraph at lines 348--350
 \OT1/cmr/m/n/10 Stan-ford In-sti-tute for Cre-ativ-ity and the Arts,
  []
 
-(./aa.bbl) [7 <./images/IM_480c00_sgm_cropped.pdf>] (./aa.aux)
+No file "On the Acoustics of Alleyways #201".bbl.
+
+LaTeX Warning: Reference `aesxx:lastpage' on page 7 undefined on input line 401
+.
+
+[7 <./images/IM_480c00_sgm_cropped.pdf>]
+(./On the Acoustics of Alleyways #201.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1853 strings out of 493117
- 27636 string characters out of 6135433
- 93709 words of memory out of 5000000
- 5280 multiletter control sequences out of 15000+600000
+ 1843 strings out of 493117
+ 27714 string characters out of 6135433
+ 93685 words of memory out of 5000000
+ 5273 multiletter control sequences out of 15000+600000
  10705 words of font info for 38 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,9n,25p,816b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,25p,850b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -434,7 +471,8 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on aa.pdf (7 pages, 2143637 bytes).
+Output written on "On the Acoustics of Alleyways #201.pdf" (7 pages, 2139949 by
+tes).
 PDF statistics:
  261 PDF objects out of 1000 (max. 8388607)
  156 compressed objects within 2 object streams
