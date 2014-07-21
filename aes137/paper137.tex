@@ -1,0 +1,87 @@
+% Example file for 137th Convention paper
+\documentclass{aes137}
+\hyphenation{Post-Script}
+
+ 
+\authors{Regina Collecchia\aff{1}, 
+         Jane Quincy-Author\aff{1}, 
+         and James Researcher\aff{2}}
+
+\affiliation[1]{BigCity College, City, ST, 00000, Country}
+\affiliation[2]{Smallville State Technical Institute, Smallville, XR,
+99999, Country}
+
+\correspondence{Jane Quincy-Author}{jane\_author@snailmail.qzl}
+
+\lastnames{Author, Quincy-Author, Researcher}
+
+\title{On the Acoustics of Alleyways}
+
+\shorttitle{Alleyway Acoustics}
+
+
+\begin{abstract}
+Alleyways bounded by flat, reflective parallel walls and smooth concrete floors produce impulse responses which are unexpectedly rich in texture, featuring a long lasting modulated tone and a changing timbre much like the sound of a didgeridoo. This work explores alleyway acoustics with acoustic measurements and presents a computational model based on the image method. Alleyway response spectrograms show spectral zeros rising in frequency with time, and a modulated tone lasting noticeably longer than the harmonic series associated with the distance between the walls. The image method model captures much of this behavior, but it is suspected that a slight inward cant of the walls is needed to produce the long lasting modulated tone.
+\end{abstract}
+
+\begin{document}
+
+\maketitle % MANDATORY! 
+
+
+\section{Introduction}
+Narrow alleyways with flat, reflective parallel walls and smooth, reflective floors have remarkable acoustics, producing strong harmonics and an evolving timbre. While the harmonics present are similar to those of a small- diameter acoustic tube whose length is equal to the wall spacing, the alleyway impulse response is much more rich in texture, featuring a long lasting modulated tone and the changing timbre of a didgeridoo. In this work, we study alleyway acoustics through acoustic measurements and a computational model based on the image method \cite{Borish} and the well established theory of acoustic ducts \cite{Morse}.
+Acoustic measurements were made in three alleyways in Palo Alto, CA, using balloon pops, hand claps and a small clapper similar to an orchestral whip as sound sources, and recorded using omnidirectional and figure-of- eight microphones. Measurements were made using a number of source and microphone positions, including positions between and at the walls and at various heights ranging from on the ground to eye level. All measurement spectrograms showed weak spectral zeros between the "wall" harmonics (170 Hz and multiples for a 6'-wide alleyway) that rise in frequency with time, and a modulated tone (340 Hz for the 6'-wide alleyway) lasting noticeably longer than the harmonic series associated with the distance between the walls. The tone modulation rate was roughly 1.2 Hz, indicating the presence of two modes, very close in frequency. The harmonic series lasted a few hundred milliseconds, whereas the tone lasted several seconds.
+The simple geometry of the alleyway places image sources in rows parallel to the ground and perpendicular to the walls, with pairs of image sources spaced every two alleyway widths apart. At high frqeuencies, the open alleyway top is not reflective, and there are two rows, one at the height of the source, and another below the ground at a depth equal to the negative source height. At low frequencies, the top of the alleyway presents an inverting reflection, and there will be a series of image source rows above and below the ground, spaced about even multiples of the alleyway height.
+Impulse responses generated from the image sources reproduce many of the features of the measured alleyway responses. The harmonic series and the spectral zeros rising in frequency over time are clearly visible, and appear to be due to the changing listener arrival times of signals from the image source row above the ground, relative to the arrival times from the image source row below the ground.
+The long lasting modulated tone is not present in the simple image source model. While the open alleyway top would create an inverting reflection, thus keeping energy in the alleyway, it would do so only at frequencies much lower than that of the frequency of the long lasting tone, which in our measurements is twice that of the inverse wall spacing. If the alleyway walls are slightly canted inward, the long lasting tone and its modulation can be produced. In this case, the modulation can be thought of as a result of the time taken for sound waves to reflect many times off the alleyway walls, be directed downwards by the wall cant, and then reflect back upwards from the ground.
+Finally, image method models tuned to each alleyway are presented, and their acoustic characteristics compared to the measurements.
+
+%\begin{table*}
+%\begin{center}
+%\begin{tabular}{|c|l|r|}
+%\hline
+%234093241&23402312&3432829807434\\
+%2398234&423403290&123144298\\
+%2340243012597398&1245987533&24982499\\
+%\hline
+%\end{tabular}
+%\caption{This is a two-column table.}
+%\end{center}
+%\end{table*}
+%
+%
+%\begin{figure*}[tb!]
+%\begin{center}
+%\fbox{\vrule width0pt height 1in\vrule width6in height 0in}
+%\end{center}
+%\caption[2]{It is best to place to place two-column figures at the bottom
+%or top of a page.}
+%\end{figure*}
+
+\begin{thebibliography}{99}
+
+\bibitem{Borish}
+Borish, J. ``Extension of the image model to arbitrary polyhedra." J. Acoust. Soc. Am. 75, 1827 (1984).
+\bibitem{Morse}Morse, P. and K. Ingard. \emph{Theoretical Acoustics}. Princeton, NJ: Princeton University Press, 1987, pp.~471, 503, 571.
+
+%\bibitem{DEK2}
+%D. E. Knuth, {\it Selected papers on analysis of algorithms}, CSLI
+%Publ., Stanford, CA, 2000; CNO
+%CMP 1 762 319 
+%
+%\bibitem{DEK3}
+%D. E. Knuth, Algorithmica {\bf 22} (1998), no.~4, 561--568; MR
+%2000j:68037 
+%
+%\bibitem{DEK4}
+%R. L. Graham, D. E. Knuth and O. Patashnik, {\it Concrete mathematics}
+%(Polish), Translated from the
+%second English (1994) edition by P. Chrzastowski, A. Czumaj,
+%L. Gasieniec and M. Raczunas, Second
+%edition, Wydawnictwo Naukowe PWN, Warsaw, 1998; MR 99m:68002
+%
+\end{thebibliography}
+
+
+\end{document}
