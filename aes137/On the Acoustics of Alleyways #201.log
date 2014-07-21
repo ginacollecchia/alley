@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 JUL 2014 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 JUL 2014 22:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -180,24 +180,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/alleyway_birdseye.png Graphic file (type png)
 
 <use images/alleyway_birdseye.png>
-Package pdftex.def Info: images/alleyway_birdseye.png used on input line 41.
+Package pdftex.def Info: images/alleyway_birdseye.png used on input line 40.
 (pdftex.def)             Requested size: 103.88963pt x 160.2452pt.
 
 <images/alleyway_lookingdown.png, id=42, 561.09625pt x 957.5775pt>
 File: images/alleyway_lookingdown.png Graphic file (type png)
 
 <use images/alleyway_lookingdown.png>
-Package pdftex.def Info: images/alleyway_lookingdown.png used on input line 45.
+Package pdftex.def Info: images/alleyway_lookingdown.png used on input line 44.
 
 (pdftex.def)             Requested size: 92.59676pt x 158.02269pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 54.
+(Font)              <8> on input line 53.
+
+Overfull \hbox (84.61667pt too wide) in paragraph at lines 53--63
+[][] 
+ []
 
 <images/printers_labeled_IR.png, id=43, 571.13374pt x 427.5975pt>
 File: images/printers_labeled_IR.png Graphic file (type png)
 
 <use images/printers_labeled_IR.png>
-Package pdftex.def Info: images/printers_labeled_IR.png used on input line 70.
+Package pdftex.def Info: images/printers_labeled_IR.png used on input line 69.
 (pdftex.def)             Requested size: 225.84375pt x 169.08511pt.
 
 
@@ -207,7 +211,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/artists_labeled_IR.png Graphic file (type png)
 
 <use images/artists_labeled_IR.png>
-Package pdftex.def Info: images/artists_labeled_IR.png used on input line 72.
+Package pdftex.def Info: images/artists_labeled_IR.png used on input line 71.
 (pdftex.def)             Requested size: 225.84375pt x 168.68819pt.
 
 
@@ -217,15 +221,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/macs_labeled_IR.png Graphic file (type png)
 
 <use images/macs_labeled_IR.png>
-Package pdftex.def Info: images/macs_labeled_IR.png used on input line 74.
+Package pdftex.def Info: images/macs_labeled_IR.png used on input line 73.
 (pdftex.def)             Requested size: 225.84375pt x 168.98111pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 All mea-sure-ment spec-tro-grams (Figs. 2 and 3)
+Underfull \hbox (badness 1152) in paragraph at lines 80--82
+\OT1/cmr/m/n/10 All mea-sure-ment spec-tro-grams (Figs. 5 and 6)
  []
 
 [2 <./images/alleyway_birdseye.png> <./images/alleyway_lookingdown.png> <./imag
@@ -234,15 +238,18 @@ py)>] <images/logspectrogram.png, id=56, 561.09625pt x 420.57124pt>
 File: images/logspectrogram.png Graphic file (type png)
 
 <use images/logspectrogram.png>
-Package pdftex.def Info: images/logspectrogram.png used on input line 84.
+Package pdftex.def Info: images/logspectrogram.png used on input line 83.
 (pdftex.def)             Requested size: 225.84375pt x 165.61832pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <images/logspectrogram_evenmoredetail.png, id=58, 561.09625pt x 420.57124pt>
 File: images/logspectrogram_evenmoredetail.png Graphic file (type png)
 
 <use images/logspectrogram_evenmoredetail.png>
 Package pdftex.def Info: images/logspectrogram_evenmoredetail.png used on input
- line 86.
+ line 87.
 (pdftex.def)             Requested size: 225.84375pt x 170.49612pt.
 
 
@@ -252,105 +259,117 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/ISM_uncanted.pdf Graphic file (type pdf)
 
 <use images/ISM_uncanted.pdf>
-Package pdftex.def Info: images/ISM_uncanted.pdf used on input line 91.
+Package pdftex.def Info: images/ISM_uncanted.pdf used on input line 94.
 (pdftex.def)             Requested size: 225.84375pt x 110.13899pt.
- [3 <./images/logspectrogram.png (PNG copy)> <./images/logspectrogram_evenmored
-etail.png (PNG copy)> <./images/macs_labeled_IR.png (PNG copy)> <./images/ISM_u
-ncanted.pdf>]
-<images/annotated_reflections_v2.pdf, id=69, 2296.58pt x 1814.78pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./images/logspectrogram.png (PNG copy)> <./images/logspectrogram_evenmorede
+tail.png (PNG copy)> <./images/macs_labeled_IR.png (PNG copy)>]
+<images/annotated_reflections_v2.pdf, id=66, 2296.58pt x 1814.78pt>
 File: images/annotated_reflections_v2.pdf Graphic file (type pdf)
 
 <use images/annotated_reflections_v2.pdf>
 Package pdftex.def Info: images/annotated_reflections_v2.pdf used on input line
- 97.
+ 98.
 (pdftex.def)             Requested size: 225.84375pt x 178.44258pt.
 
-<images/planview_paths_v2.pdf, id=70, 1838.87pt x 1646.15pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/planview_paths_v2.pdf, id=67, 1838.87pt x 1646.15pt>
 File: images/planview_paths_v2.pdf Graphic file (type pdf)
 
 <use images/planview_paths_v2.pdf>
-Package pdftex.def Info: images/planview_paths_v2.pdf used on input line 110.
+Package pdftex.def Info: images/planview_paths_v2.pdf used on input line 111.
 (pdftex.def)             Requested size: 158.08994pt x 141.5159pt.
 
-<images/ISM_0m_cant_0m_dip.png, id=71, 676.5275pt x 417.56pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/ISM_0m_cant_0m_dip.png, id=68, 676.5275pt x 417.56pt>
 File: images/ISM_0m_cant_0m_dip.png Graphic file (type png)
 
 <use images/ISM_0m_cant_0m_dip.png>
-Package pdftex.def Info: images/ISM_0m_cant_0m_dip.png used on input line 117.
+Package pdftex.def Info: images/ISM_0m_cant_0m_dip.png used on input line 118.
 (pdftex.def)             Requested size: 225.84375pt x 149.05879pt.
 
-<images/ISM_0pt05m_cant_0m_dip.png, id=73, 676.5275pt x 417.56pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/ISM_0pt05m_cant_0m_dip.png, id=70, 676.5275pt x 417.56pt>
 File: images/ISM_0pt05m_cant_0m_dip.png Graphic file (type png)
 
 <use images/ISM_0pt05m_cant_0m_dip.png>
 Package pdftex.def Info: images/ISM_0pt05m_cant_0m_dip.png used on input line 1
-19.
+20.
 (pdftex.def)             Requested size: 225.84375pt x 149.05879pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ISM_0pt05m_cant_0pt02m_dip.png, id=75, 676.5275pt x 417.56pt>
+<images/ISM_0pt05m_cant_0pt02m_dip.png, id=72, 676.5275pt x 417.56pt>
 File: images/ISM_0pt05m_cant_0pt02m_dip.png Graphic file (type png)
 
 <use images/ISM_0pt05m_cant_0pt02m_dip.png>
 Package pdftex.def Info: images/ISM_0pt05m_cant_0pt02m_dip.png used on input li
-ne 121.
+ne 122.
 (pdftex.def)             Requested size: 225.84375pt x 149.05879pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ISM_canted_v2.pdf, id=77, 3994.925pt x 2726.185pt>
+<images/ISM_canted_v2.pdf, id=74, 3994.925pt x 2726.185pt>
 File: images/ISM_canted_v2.pdf Graphic file (type pdf)
 
 <use images/ISM_canted_v2.pdf>
-Package pdftex.def Info: images/ISM_canted_v2.pdf used on input line 125.
+Package pdftex.def Info: images/ISM_canted_v2.pdf used on input line 126.
 (pdftex.def)             Requested size: 225.84375pt x 154.07965pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./images/ISM_0m_cant_0m_dip.png (PNG copy)> <./images/annotated_reflections
-_v2.pdf> <./images/planview_paths_v2.pdf>] [5 <./images/ISM_0pt05m_cant_0m_dip.
-png (PNG copy)> <./images/ISM_0pt05m_cant_0pt02m_dip.png (PNG copy)> <./images/
-ISM_canted_v2.pdf>] [6
+[4 <./images/ISM_uncanted.pdf> <./images/annotated_reflections_v2.pdf> <./image
+s/planview_paths_v2.pdf>]
+Underfull \vbox (badness 6348) has occurred while \output is active []
 
-] (./On the Acoustics of Alleyways #201.aux)
+ [5 <./images/ISM_0m_cant_0m_dip.png (PNG copy)> <./images/ISM_0pt05m_cant_0m_d
+ip.png (PNG copy)> <./images/ISM_0pt05m_cant_0pt02m_dip.png (PNG copy)> <./imag
+es/ISM_canted_v2.pdf>] [6
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./On the Acoustics of Alleyways #201.aux) ) 
 Here is how much of TeX's memory you used:
  1806 strings out of 493117
  26927 string characters out of 6135433
- 88701 words of memory out of 5000000
+ 90682 words of memory out of 5000000
  5242 multiletter control sequences out of 15000+600000
  11014 words of font info for 39 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,9n,25p,784b,280s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "On the Acoustics of Alleyways #201.pdf" (6 pages, 851452 byt
+ 39i,9n,25p,844b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmss10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt10.pfb>
+Output written on "On the Acoustics of Alleyways #201.pdf" (6 pages, 853779 byt
 es).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)

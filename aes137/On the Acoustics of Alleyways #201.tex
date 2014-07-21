@@ -20,21 +20,20 @@
 
 
 \begin{abstract}
-Alleyways bounded by flat, reflective parallel walls and smooth concrete floors produce impulse responses which are unexpectedly rich in texture, featuring a long lasting modulated tone and a changing timbre much like the sound of a didgeridoo. This work explores alleyway acoustics with acoustic measurements and presents a computational model based on the image method. Alleyway response spectrograms show spectral zeros rising in frequency with time, and a modulated tone lasting noticeably longer than the harmonic series associated with the distance between the walls. The image method model captures much of this behavior, but it is suspected that a slight inward cant of the walls is needed to produce the long lasting modulated tone.
+Alleyways bounded by flat, reflective parallel walls and smooth concrete floors produce impulse responses which are unexpectedly rich in texture, featuring a long lasting modulated tone and a changing timbre much like the sound of a didgeridoo. This work explores alleyway acoustics with acoustic measurements and presents a computational model based on the image method. Alleyway response spectrograms show spectral zeros rising in frequency with time, and a modulated tone lasting noticeably longer than the harmonic series associated with the distance between the walls. With slight canting of the walls and floors to produce the long lasting modulated tone, the image method model captures much of this behavior.
 \end{abstract}
 
 \begin{document}
 
 \maketitle % MANDATORY! 
 
-
 \section{Introduction}
-Narrow alleyways with flat, reflective parallel walls and smooth, reflective floors have remarkable acoustics, producing strong harmonics and an evolving timbre. While the harmonics present are similar to those of a small-diameter acoustic tube whose length is equal to the wall spacing, the alleyway impulse response is much more rich in texture, featuring a long lasting modulated tone and the changing timbre of a didgeridoo. In this work, we study alleyway acoustics through acoustic measurements and a computational model based on the image method \cite{Borish} and the well established theory of acoustic ducts \cite{Morse}.
+Narrow alleyways with flat, reflective, parallel walls and smooth, reflective floors have remarkable acoustics, producing strong harmonics and an evolving timbre. While the harmonics present are similar to those of a small-diameter acoustic tube whose length is equal to the wall spacing, the alleyway impulse response is much more rich in texture, featuring a long lasting modulated tone and the changing timbre of a didgeridoo. In this work, we study alleyway acoustics through acoustic measurements and a computational model based on the image method \cite{Borish} and the well established theory of acoustic ducts \cite{Morse}.
 
 % Finally, image method models tuned to each alleyway are presented, and their acoustic characteristics compared to the measurements.
 
 \section{Measurements}
-Acoustic measurements were made in three alleyways in Palo Alto, CA with balloon pops, hand claps, and a small clapper similar to an orchestral whip as sound sources. One was measured with slow logarithmic sine sweeps. These were recorded using a MOTU Traveler Mk3 audio interface, K\&H speaker, and 2 C-414 microphones. The locations of the microphones and speaker for the sine sweep impulse response collection in an alleyway adjacent to Printer's Ink Cafe is shown in Fig.~1.
+Acoustic measurements were made in three alleyways in Palo Alto, CA with balloon pops, hand claps, and a small clapper similar to an orchestral whip as sound sources, recorded with INSERT RECORDING EQUIP HERE (iphone, handheld recorder, interface, capsule mics). One was measured with slow logarithmic sine sweeps, recorded using a MOTU Traveler Mk3 audio interface, K\&H speaker, and two C-414 microphones. The locations of the microphones and speaker for the sine sweep impulse response collection in an alleyway adjacent to Printer's Ink Cafe is shown in Fig.~1.
 
 \begin{figure} 
 \begin{minipage}[b]{0.46\linewidth} \centering
@@ -44,22 +43,22 @@ Acoustic measurements were made in three alleyways in Palo Alto, CA with balloon
 \begin{minipage}[b]{0.41\linewidth} \centering
 \includegraphics[width=\textwidth]{images/alleyway_lookingdown.png}
 \end{minipage}
-\caption{Plan view (left) of our setup in ``Printer's Ink Alleyway" with speaker and pair of figure-8 microphones, and elevation view of the alley (right). Measurements were made with speaker oriented to the North, East, and West.}
+\caption{Plan view (left) of our setup in ``Printer's Ink Alleyway" with a K\&H speaker and pair of figure-8 C-414 microphones; and elevation view of the alley (right). Measurements were made with speaker oriented to the North, East, and West in this position.}
 \end{figure}
 
-Additional measurements were made using a number of source and microphone positions, including positions between and at the walls and at various heights ranging from on the ground to eye level. All measurement frequency responses show peaks at the harmonic series associated with the distance between the parallel walls. 
+Measurements were made using a number of source and microphone positions, including positions between and at the walls and at various heights ranging from on the ground to eye level. All measurement frequency responses show peaks at the harmonic series associated with the distance between the parallel walls, given explicitly in the table and FFT plots below (Figs.~2-4). 
 
 \begin{center} \begin{table}[h!]
 \footnotesize
-\begin{tabular}{|l|c|c|}
+\begin{tabular}{|l|c|c|c|}
 \hline
-\textbf{Adjacent Store} & \textbf{WxLxH} & \textbf{Cant of walls} \\
+\textbf{Adjacent Store} & \textbf{WxLxH} & \textbf{Wall cant} & \textbf{Floor dip} \\
 \hline
-Printer's Ink & 6'x64'x24' & Yes (left): $\approx0.52\deg$ \\
+Printer's Ink & 1.85 x 19.69 x 7.38m & Yes (left): $\approx0.52\deg$ & 0m \\
 \hline
-Accent Art & 8'x80'x22' & No \\
+Accent Art & 2.46 x 24.62 x 6.77m & $0.2\deg$ & 0m \\
 \hline
-Mac's Smoke Shop & 8'x80'x24' & Yes (right): $\approx0.30\deg$ \\
+Mac's Smoke Shop & 2.46 x 24.62 x 7.38m & Yes (right): $\approx0.30\deg$ & 0.077m \\
 \hline
 \end{tabular} \caption{Dimensions of the three measured alleyways, named for the business adjacent to them.} \end{table}
 \normalsize
@@ -67,34 +66,36 @@ Mac's Smoke Shop & 8'x80'x24' & Yes (right): $\approx0.30\deg$ \\
 
 % FFT plots
 
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/printers_labeled_IR.png} \caption{Resonant frequencies of the Printer's Ink Alley.} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/printers_labeled_IR.png} \caption{Resonant frequencies of the Printer's Ink Alley from a balloon pop recorded with INSERT HANDHELD RECORDER. The labeled peaks have a difference of either 90 or 180Hz, related to its width (1.85m $\simeq$ 185Hz).} \end{figure}
 
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/artists_labeled_IR.png} \caption{Resonant frequencies of the Artist Accent Alley.} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/artists_labeled_IR.png} \caption{Resonant frequencies of the Artist Accent Alley from hand claps recorded with an iPhone 5S. These differ in either 66 or 132Hz, related to its width (2.46m $\simeq$ 139Hz).} \end{figure}
 
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/macs_labeled_IR.png} \caption{Resonant frequencies of the Mac's Smoke Shop Alley.} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/macs_labeled_IR.png} \caption{Resonant frequencies of the Mac's Smoke Shop Alley from a balloon pop recorded with INSERT RECORDING DEVICE, differing in either 68 or 135Hz, again related to its width (2.46m).} \end{figure}
+
+The impact of the vertical resonant frequencies is better seen in the spectrograms of these impulse responses. % , as they should be around 10Hz for the 8m tall walls...
 
 \section{Modal analysis}
 Modal analysis connects the resonant frequencies seen in the different alleyways with their physical dimensions. Duct modes, etc.
 
 \section{Transient response}
-All measurement spectrograms (Figs.~2 and 3) showed weak spectral zeros between the ``wall" harmonics ($\approx$170 Hz and multiples for a 6'-wide alleyway) that rise in frequency with time, and a modulated tone ($\approx$340 Hz for the 6'-wide alleyway) lasting noticeably longer than the harmonic series associated with the distance between the walls. 
-
-The tone modulation rate was roughly 1.2 Hz, indicating the presence of two modes, very close in frequency. The harmonic series lasted a few hundred milliseconds, whereas the tone lasted several seconds.
+All measurement spectrograms (Figs.~5 and 6) showed weak spectral zeros between the ``wall" harmonics ($\approx$185 Hz and multiples for a 1.85m-wide alleyway) that rise in frequency with time, and a modulated tone ($\approx$370 Hz for the 1.85m-wide alleyway) lasting noticeably longer than the harmonic series associated with the distance between the walls. 
 
 \begin{figure}[h] \centering \includegraphics[width=\linewidth, trim=10mm 5mm 2mm 7mm, clip]{images/logspectrogram.png} \caption{Logarithmic time scale spectrogram for a measured impulse response, speaker oriented to the West, microphone channel 1.} \end{figure}
 
+At the onset of the energy, the response rises and then falls back down within the first 100 milliseconds. The tone modulation rate was roughly 1.2 Hz, indicating the presence of two modes, very close in frequency. The harmonic series lasted a few hundred milliseconds, whereas the tone lasted several seconds. Fig.~6, with a linear time scale, shows more detail of these modulating modes.
+
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth, trim=10mm 5mm 2mm 3mm, clip]{images/logspectrogram_evenmoredetail.png} \caption{Spectrogram with linear time scale of a balloon pop of the same impulse response as Fig.~2, showing more detail of the low frequencies and their strong, independent modulation.} \end{figure}
 
+Energy decay envelope, etc.
+
 \section{Image model}
-The simple geometry of the alleyway places image sources in rows parallel to the ground and perpendicular to the walls, with pairs of image sources spaced every two alleyway widths apart. At high frequencies, the open alleyway top is not reflective, and there are two rows, one at the height of the source, and another below the ground at a depth equal to the negative source height (Fig.~4). 
+The simple geometry of an alleyway with all surfaces meeting at right angles places image sources in rows parallel to the ground and perpendicular to the walls, with pairs of image sources spaced every two alleyway widths apart. At high frequencies, the open alleyway top is not reflective, and there are two rows, one at the height of the source, and another below the ground at a depth equal to the negative source height (Fig.~7). At low frequencies, the top of the alleyway presents an inverting reflection, and there will be a series of image source rows above and below the ground, spaced about even multiples of the alleyway height. 
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/ISM_uncanted.pdf} \caption{The image source model for an alley with perfectly orthogonal walls.} \end{figure}
 
-At low frequencies, the top of the alleyway presents an inverting reflection, and there will be a series of image source rows above and below the ground, spaced about even multiples of the alleyway height. 
+This simple model describes pretty closely what we see in the first 75 milliseconds of the impulse response, proven by annotating a measured impulse response with the expected arrival of reflections from the virtual sources in Fig.~8. Measurements taken with figure 8 microphones orthogonal to one another show arrivals from the West wall as positive spikes and arrivals from the East as negative ones. The very first early reflections hit the microphones near their pole, as well as the direct path, so these events are more evident in the second channel, pointed down the length of the alley. Considering the microphone antennae pattern, speaker radiation pattern (facing the West wall), and speed of sound in air, we can relate visible peaks in the impulse response to virtual sources in our model.
 
-This simple model describes pretty closely what we see in the first 75 milliseconds of the impulse response (Fig.~5). Measurements taken with figure 8 microphones orthogonal to one another show arrivals from the West wall as positive spikes and arrivals from the East as negative ones. The very first early reflections hit the microphones near their pole, as well as the direct path, so these events are more evident in the second channel, pointed down the length of the alley. Considering the microphone antennae pattern, speaker radiation pattern (facing the West wall), and speed of sound in air, we can relate visible peaks in the impulse response to virtual sources in our model.
-
-\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/annotated_reflections_v2.pdf} \caption{Impulse response for the setup shown in Fig.~1 with speaker oriented to the West, annotated with the virtual sources from our model.} \end{figure}
+\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/annotated_reflections_v2.pdf} \caption{Impulse response for the setup shown in Fig.~1 with speaker oriented to the West, annotated with the virtual sources from our model. Gray vertical lines mark the expected time of arrival of reflections coming from virtual sources, and the yellow circles label the virtual source index. After about 20ms, the sources originating from behind the speaker (e.g., reflecting off of Wall 2) are less evident. The direct path, first reflection off of Wall 2, and earliest reflections off of the floor are also small in Mic 1, as these arrived in the null of the figure-8 pattern which was oriented towards the parallel walls.} \end{figure}
 
 %\begin{figure} 
 %\begin{minipage}[b]{0.45\linewidth} \centering
@@ -120,7 +121,7 @@ But this model does not explain the strong amplitude modulation we experience in
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth, trim=13mm 2mm 10mm 3mm, clip]{images/ISM_0pt05m_cant_0pt02m_dip.png} \caption{Virtual source locations for an alleyway with both walls canted in 0.05m and a dip in the center of the ground of 0.02m.} \end{figure}
 
-These more complex constraints lead to a model with sources lying on a circle centered where the two walls would meet in space were they extended sufficiently long, then another circle of sources reflected about the floor, and finally, dense arcs of sources that intersect these circles at 90 degree angles.
+These more complex constraints lead to a model with sources lying on a circle centered where the two walls would meet in space were they extended sufficiently long, then another circle of sources reflected about the floor, and finally, dense arcs of sources that intersect both of these circles at 90 degree angles.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/ISM_canted_v2.pdf} \caption{The image sources lie on a circle centered at the point of the wall intersection, if they were extended infinitely through space.} \end{figure}
 
