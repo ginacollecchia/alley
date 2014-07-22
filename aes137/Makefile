@@ -15,7 +15,7 @@ pq:
 	pdflatex $(NAME)
 	$(OPDF) $(NAME).pdf
 
-all p pdf $(NAME).pdf: $(NAME).tex ACE-eval-LT.tex eps/*.eps
+all p pdf $(NAME).pdf: $(NAME).tex
 	pdflatex $(NAME)
 	bibtex $(NAME)
 	pdflatex $(NAME)
