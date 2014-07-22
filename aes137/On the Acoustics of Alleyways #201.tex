@@ -58,8 +58,8 @@ To explore the acoustics of alleyways, we took measurements in three Palo Alto, 
 
 Acoustic measurements were made in three alleyways in Palo Alto, CA adjacent to Printer's Ink Cafe, Accent Arts, and Mac's Smoke Shop
 using balloon pops, hand claps, and a small clapper similar to an
-orchestral whip as sound sources. Alleyway responses were recorded at various times with an iPhone 5S, two small-diaphragm condenser omnidirectional microphones, a Tascam DR-100 handheld recorder, and two AKG C414 microphones connected to a MOTU Traveler Mk3 audio interface and a Macbook Pro. One was measured with 20 second long, 48kHz logarithmic sine sweeps, recorded using the MOTU interface, a K\&H loudspeaker, and the two AKG microphones. The locations of the microphones and speaker for the sine-sweep impulse response collection\footnote{We use the term
-``impulse response'' loosely in this to refer to the response to a transient source, such as a balloon pop, clapper, etc.} in an alleyway adjacent to
+orchestral whip as sound sources. Alleyway responses were recorded at various times with an iPhone 5S, two small-diaphragm condenser omnidirectional microphones, a Tascam DR-100 handheld recorder, and two AKG C414 microphones connected to a MOTU Traveler Mk3 audio interface and a Macbook Pro. One was measured with 20-second long, 48kHz logarithmic sine sweeps, recorded using the MOTU interface, a K\&H loudspeaker, and the two AKG microphones. The locations of the microphones and speaker for the sine-sweep impulse response collection\footnote{We use the term
+``impulse response'' loosely to refer to the response to a transient source, such as a balloon pop, clapper, etc.} in an alleyway adjacent to
 Printer's Ink Cafe is shown in Fig.~2.
 
 \begin{figure}[h!]
@@ -191,7 +191,7 @@ perpendicular to the walls, with pairs of image sources spaced every
 two alleyway widths apart. At high frequencies, the open alleyway top
 is not reflective, and there are two rows, one at the height of the
 source, and another below the ground at a depth equal to the negative
-source height (Fig.~7). At low frequencies, the top of the alleyway
+source height (Fig.~8). At low frequencies, the top of the alleyway
 presents an inverting reflection, and there will be a series of image
 source rows above and below the ground, spaced at even multiples of
 the alleyway height plus or minus the source height.
@@ -200,7 +200,7 @@ the alleyway height plus or minus the source height.
 \caption{The image source model for an alley with perfectly orthogonal walls, describing the behavior of frequencies with wavelengths shorter than twice the width of the alley. Invisible sources are listed in parentheses below visible ones.} 
 \end{figure}
 
-This idealized image source model produces the impulse shown in Figure 8, specified by 480 orders of reflection, with the source and microphone in the same positions as in Fig.~2 and the dimensions of Printer's Ink Alley. The frequency response of painted concrete block was assumed independent of frequency, and a small amount of attenuation was applied to each wall reflection.
+This idealized image source model produces the impulse shown in Figure 9, specified by 480 orders of reflection, with the source and microphone in the same positions as in Fig.~2 and the dimensions of Printer's Ink Alley. The frequency response of painted concrete block was assumed independent of frequency, and a small amount of attenuation was applied to each wall reflection.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/IM_480c00_irsg_cropped.pdf} \caption{Synthesized impulse response and spectrogram of the simple image model for 480 orders of reflection.} \end{figure}
 
@@ -223,7 +223,7 @@ and the east wall (wall 2) are negative. Gray, vertical lines mark the expected 
 \end{figure}
 
 \begin{figure}[h!] \centering \includegraphics[width=0.7\linewidth]{images/planview_paths_v2.pdf} 
-\caption{The first three orders of reflections as viewed from above the alley.} 
+\caption{The first three orders of reflections as viewed from above the alley with associated virtual sources labeled.} 
 \end{figure}
 
 Following the source labeled `201' in Fig.~10, no more sources beginning with `2' (to mean that they originated from the back of the speaker) are labeled, as they are buried in the noise. Hence, the sources of interest mostly originate from the front of the speaker. The very first early reflections as well as the direct path hit microphone 1 near its null, so these events are more evident in the second channel. Soon after these, a clear pattern emerges between the polarity of pulses and the source location: Sources with virtual location $(x,y)$ and $(x,-y)$ are seen in pairs in the impulse response, getting closer to one another over time as the angle between the microphone and the pair of sources approaches 0. This simple model closely describes what we see in the onset of the impulse response. 
@@ -264,7 +264,7 @@ sufficiently extended (the upper blue arc of sources). These are then reflected 
 both of these circles at 90 degree angles.
 
 As the reflection order increases, the distance from the listener to the virtual sources increases roughly linearly, as does the number of distinct virtual sources that contribute to the response. Because those distinct sources arrive at distinct, irregularly spaced times (where we once had single images), the response amplitude does not decay at the $1/r$ rate of spherical spreading, but instead like $1/\sqrt{r}$ amplitude decay. %This spread in the positions of the 
-These ``ripples" of concentric arcs of virtual sources generate the observed mode-splitting, which takes on the form of strong amplitude modulation due to beating frequencies.
+These ``ripples" of concentric arcs of virtual sources generate the observed mode splitting, which takes on the form of strong amplitude modulation due to beating frequencies.
 
 
 %\begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/ISM_canted_v2.pdf} 
@@ -301,7 +301,7 @@ From measurements taken with increasing source-microphone distance, we have one 
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/P12C_irsg_cropped.pdf} \caption{Spectrograms of four hand claps in Printer's Ink Alley, source moving away each pulse, so the source-microphone distance varies from 4' to 12' to 32' to 44' (microphone near center of alley).} \end{figure}
 
-If the source is proximal to the listener in the alley ($<3$m), the response is more closely represented by a constant loop of arriving source reflections---e.g., the simplified image source model in Fig.~8. These arrivals produce the tone and its harmonic series that we expect, with linearly increasing distance between the listener and image sources. But when the source and listener are more distant, the low-order image sources are roughly the same distance to the listener as the original source and the later arrivals become more separated in time, creating the downward chirp frequency response. This behavior is captured by the synthesized impulse response from the idealized image model, plotted in Fig.~16.
+If the source is proximal to the listener in the alley ($<3$m), the response is more closely represented by a constant loop of arriving source reflections---e.g., the simplified image source model in Figs.~8 and 12. These arrivals produce the tone and its harmonic series that we expect, with linearly increasing distance between the listener and image sources. But when the source and listener are more distant, the low-order image sources are roughly the same distance to the listener as the original source and the later arrivals become more separated in time, creating the dmode splittingownward chirp frequency response. This behavior is captured by the synthesized impulse response from the idealized image model, plotted in Fig.~16.
 
 \begin{figure}[h!] \centering \includegraphics[width=\linewidth]{images/IM_480c00_sgm_cropped.pdf} \caption{High time resolution spectrograms of the synthesized impulse response.} \end{figure}
 

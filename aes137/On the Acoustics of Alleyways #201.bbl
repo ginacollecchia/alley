@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\def\UrlFont{\rmfamily}
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{Allen}
+J.~B. Allen and D.~A. Berkley, ``Image method for efficiently simulating
+  small-room acoustics,'' \emph{Journal of the Acoustical Society of America},
+  vol.~65, pp. 943--950, 1979.
+
+\bibitem{Borish}
+J.~Borish, ``Extension of the image model to arbitrary polyhedra,''
+  \emph{Journal of the Acoustical Society of America}, vol.~75, no.~6, pp.
+  1827--1836, 1984.
+
+\bibitem{Morse}
+P.~M. Morse and K.~U. Ingard, \emph{Theoretical Acoustics}.\hskip 1em plus
+  0.5em minus 0.4em\relax New York: McGraw-Hill, 1968.
+
+\end{thebibliography}
