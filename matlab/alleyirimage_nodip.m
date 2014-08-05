@@ -31,7 +31,7 @@ rho = 0.3;   % source radius, meters
 microphone = [1.1282; 1.6667; -1.6410];
 
 % image method
-order = 50; % maximum number of reflections computed per path, count
+order = 200; % maximum number of reflections computed per path, count
 countmax = 2^20;    % maximum image count, images
 
 
